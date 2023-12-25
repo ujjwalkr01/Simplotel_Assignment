@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  background-color: #fa8072;
+  text-align: center;
+  padding: 5px 0px;
+  font-family: serif;
+  font-weight: 600;
+}
+nav li img {
+  width: 25px;
+  height: 22px;
+}
+#parentContainer {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+  font-family: sans-serif;
+  /* height: 100vh; */
+}
+#text-container {
+  width: 50%;
+  background-image: linear-gradient(
+    to right,
+    #fffcbc,
+    #fff0b5,
+    #ffe5b1,
+    #ffdaae,
+    #ffd0ad,
+    #ffcbb3,
+    #ffc7ba,
+    #ffc4c2,
+    #ffc7d1,
+    #ffcbe0,
+    #fcd1ee,
+    #f5d7fb
+  );
+}
+#article1 h1 {
+  margin-top: 1rem;
+  font-size: 40px;
+}
+#article1 {
+  /* border: 2px solid red; */
+  margin: auto;
+  width: 50%;
+  margin-top: 10%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+#article1 p {
+  font-size: 15px;
+  margin: 2.5rem 0;
+}
+
+button {
+  width: 50%;
+  padding: 0.6rem 0rem;
+  border: none;
+  border-radius: 2px;
+  background-color: #fa8072;
+  color: white;
+  cursor: pointer;
+}
+
+#img-container {
+  /* border: 2px solid blue; */
+  width: 50%;
+}
+
+img {
+  width: 100%;
+}
+
+#parentContainer2 {
+  /* border: 1px solid black; */
+  margin-top: 4%;
+  padding: 6rem 4rem;
+  background-image: linear-gradient(
+    to right,
+    #fffcbc,
+    #fff0b5,
+    #ffe5b1,
+    #ffdaae,
+    #ffd0ad,
+    #ffcbb3,
+    #ffc7ba,
+    #ffc4c2,
+    #ffc7d1,
+    #ffcbe0,
+    #fcd1ee,
+    #f5d7fb
+  );
+}
+#childContainer {
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#childContainer > div:first-child {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  gap: 10px;
+}
+
+#childContainer > div:first-child > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+#child1 > div {
+  /* border: 1px solid green; */
+  height: 49%;
+}
+
+#child1 > div:first-child {
+  background-image: url("pexels-rachel-claire-6752433.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#child1 > div:nth-child(2) {
+  background-image: url("pexels-eva-bronzini-6141651.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#article2 {
+  background-color: #fa8072;
+  width: 60%;
+  padding: 4.5%;
+  margin-left: 4%;
+}
+#article2 h1 {
+  font-size: 40px;
+  margin: 4% 0;
+}
+
+#child2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#article2 div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 481px) {
+  nav ul {
+    list-style: none;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  nav li img {
+    width: 12px;
+    height: 12px;
+  }
+
+  #article1 h1 {
+    margin-top: 1rem;
+    font-size: 12px;
+  }
+  #article1 {
+    /* border: 2px solid red; */
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    margin-top: 1%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+  }
+  #article1 p {
+    font-size: 6px;
+    margin: 0.5rem 0;
+  }
+
+  button {
+    width: 50%;
+    padding: 0.2rem 0rem;
+    font-size: 8px;
+  }
+  #parentContainer2 {
+    padding: 3rem 1rem;
+  }
+  #article2 {
+    margin-left: 15%;
+  }
+  #article2 h1 {
+    font-size: 14px;
+  }
+  #article2 p {
+    font-size: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  nav ul {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  nav li img {
+    width: 16px;
+    height: 16px;
+  }
+
+  #article1 h1 {
+    margin-top: 1rem;
+    font-size: 16px;
+  }
+  #article1 {
+    /* border: 2px solid red; */
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    margin-top: 8%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+  }
+  #article1 p {
+    font-size: 10px;
+    margin: 0.8rem 0;
+  }
+
+  button {
+    width: 50%;
+    padding: 0.3rem 0rem;
+    font-size: 10px;
+  }
+  #article2 {
+    /* height: 200px; */
+    margin-left: 12%;
+  }
+  #article2 h1 {
+    font-size: 24px;
+  }
+}
